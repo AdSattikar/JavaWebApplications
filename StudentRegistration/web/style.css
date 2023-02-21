@@ -1,0 +1,44 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jan 31, 2023, 6:31:55 PM
+    Author     : Asus
+*/
+
+
+.container {
+    width:50%;
+    height: auto;
+  background-color: rgb(167, 224, 224);
+  border: 2px solid black;
+  
+}
+h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(196, 59, 37);
+    letter-spacing: 5px;
+    text-decoration: underline;
+}
+.container input{
+    padding:10px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+.container label{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.btn{
+    font-weight: bolder;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+}
+.btn:hover{
+   cursor: pointer;
+}

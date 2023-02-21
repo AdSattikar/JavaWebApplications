@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="5.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd">
+    <servlet>
+        <servlet-name>RegForm</servlet-name>
+        <servlet-class>servlet_jdbc.RegForm</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateCredits</servlet-name>
+        <servlet-class>servlet_jdbc.UpdateCredits</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteStudent</servlet-name>
+        <servlet-class>servlet_jdbc.DeleteStudent</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DisplayRecords</servlet-name>
+        <servlet-class>servlet_jdbc.DisplayRecords</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegForm</servlet-name>
+        <url-pattern>/RegForm</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateCredits</servlet-name>
+        <url-pattern>/UpdateCredits</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteStudent</servlet-name>
+        <url-pattern>/DeleteStudent</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DisplayRecords</servlet-name>
+        <url-pattern>/DisplayRecords</url-pattern>
+    </servlet-mapping>
+</web-app>
