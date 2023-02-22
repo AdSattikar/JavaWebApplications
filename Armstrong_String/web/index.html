@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Armstrong_String</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css" >
+    </head>
+    <body>
+        <h1>Enter a number to check whether it is Armstrong or not</h1>
+        <form action="armstrong.jsp" method="post">
+            <label for="num">Enter a number: </label>
+            <input type="number" name = "num" id="num"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <h1>Enter Two Strings for String Manipulation</h1>
+        <form action="stringmani.jsp" method="post">
+            <label for="s1">Enter String 1:</label>
+            <input type="text" name="s1" id="s1"><br>
+            <label for="s2">Enter String 2:</label>
+            <input type="text" name="s2" id="s2"><br>
+            <input type="submit" value="Concat" name="action">
+            <input type="submit" value="toUpper" name="action">
+            <input type="submit" value="toLower" name="action"><br>
+            <input type="submit" value="Compare" name="action"><br>
+            <label for="replace">Enter String to replace:</label>
+            <input type="text" name="replstr" id="replace">
+            <input type="submit" value="Replace" name="action">
+            
+        </form>
+        
+    </body>
+</html>
