@@ -32,3 +32,8 @@ nb-configuration.xml
 
 *.pdf
 *.docx
+/Library Management System/nbproject/private/
+/Library_Information_System/nbproject/private/
+/Test/nbproject/private/
+/lib/emp/nbproject/private/
+/emp/nbproject/private/
