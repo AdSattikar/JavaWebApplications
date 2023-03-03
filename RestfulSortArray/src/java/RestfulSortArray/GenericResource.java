@@ -44,7 +44,30 @@ public class GenericResource {
         //TODO return proper representation object
         return obj.get();
     }
-
+    public static int partition(int[] arr,int low,int high){
+        int pivot = arr[high];
+        int i=low-1;
+        for(int j=low;j<high;j++){
+            if(arr[j]<pivot){
+                i++;
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+        i++;
+        int temp = arr[i];
+        arr[i] = arr[high];
+        arr[high] = temp;
+        return i;
+    }
+    public static void quickSort(int arr[],int low,int high){
+        if(low<high){
+            int pi = partition(arr,low,high);
+            quickSort(arr,low,pi-1);
+            quickSort(arr,pi+1,high);
+        }
+    }
     /**
      * PUT method for updating or creating an instance of GenericResource
      * @param content representation for the resource
@@ -62,16 +85,17 @@ public class GenericResource {
         for (int i = 0; i < splitArray.length; i++) {
             array[i] = Integer.parseInt(splitArray[i]);
         }
-        for(int i=0;i<splitArray.length-1;i++){
-            for(int j=0;j<splitArray.length-i-1;j++){
-                if(array[j]>array[j+1]){
-                    int temp = array[j];
-                    array[j] = array[j+1];
-                    array[j+1] = temp;
-                }
-            }
-        }
-
+//        for(int i=0;i<splitArray.length-1;i++){
+//            for(int j=0;j<splitArray.length-i-1;j++){
+//                if(array[j]>array[j+1]){
+//                    int temp = array[j];
+//                    array[j] = array[j+1];
+//                    array[j+1] = temp;
+//                }
+//            }
+//        }
+        int n = array.length -1; 
+        quickSort(array,0,n);
         obj.put("<html><body><h1 style=\"color:blue\">Lab Assessment 3: Adnan Sattikar 20MIC0124<br>Sorted Array: " +Arrays.toString(array)+"</h1></body></html>");
     }
 }

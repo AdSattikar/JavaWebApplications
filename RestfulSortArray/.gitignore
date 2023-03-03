@@ -66,5 +66,6 @@ target
 web/*.css
 web/*.js
 web/*.gif
+web/images/
 
 
